@@ -39,3 +39,8 @@ d = min( vec2( dot (a,a), s*(p.x*q•y-p•y*q.x) ),
 vec2 (dot (b,b), s*(p•y-q•y) ));
 return -sqrt (d.x) *sign (d.y);
 }
+
+
+
+
+https://www.shadertoy.com/view/4s33zf
