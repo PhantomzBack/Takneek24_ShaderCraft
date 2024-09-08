@@ -130,3 +130,17 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     
     fragColor = vec4(snow)+gradient*vec4(0.4,0.8,1.0,0.0) + random*0.01;
 }
+
+
+
+
+// Function to create snow (white areas)
+float snow(vec2 p) {
+    return smoothEdge(0.0, p.y);
+}
+
+// Dynamic snowflake generation
+float snowflakes(vec2 p) {
+    float flake = sin(p.x * 10.0 + u_time * 2.0) * cos(p.y * 20.0 + u_time * 3.0);
+    return smoothEdge(0.5, flake);
+}
