@@ -19,3 +19,23 @@ if( all(c) || all(not(c)) ) s*=-1.0;
 return
 s*sqrt(d);
 ｝
+
+
+
+
+Isosceles Triangle - exact (https://www.shadertoy.com/view/MIdcD7)
+float sTriangleIsosceles ( in vec2 p, in vec2 q )
+P.x
+abs (p.x);
+vec2
+P - q*clamp( dot(p,9)/dot(9,9), 0.0, 1.0 );
+vec2
+b
+p - g*vec2 ( clamp ( p.x/q.x, 0.0, 1.0 ), 1.0 );
+float
+=-sign( q-y);
+vec2
+d = min( vec2( dot (a,a), s*(p.x*q•y-p•y*q.x) ),
+vec2 (dot (b,b), s*(p•y-q•y) ));
+return -sqrt (d.x) *sign (d.y);
+}
