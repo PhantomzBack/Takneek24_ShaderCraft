@@ -1,4 +1,8 @@
 # Takneek24_ShaderCraft
+
+//Our final files are named as ABCD_Final
+
+
 Polygon - exact (https://www.shadertoy.com/view/wdBXRW)
 float
 sdPolygon ( in vec2[N] v,
