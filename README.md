@@ -1,6 +1,6 @@
 # Takneek24_ShaderCraft
 
-//Our final files are named as ABCD_Final
+## Our final files are final.glsl and final_animated.glsl
 
 
 Polygon - exact (https://www.shadertoy.com/view/wdBXRW)
